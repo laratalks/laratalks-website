@@ -18,8 +18,7 @@
     <header class="masthead">
         <div class="overlay"></div>
         <section class="masthead__content">
-            <figure></figure>
-            <h1>دورهمی لاراول تهران</h1>
+            <h1>دورهمی برنامه نویسان لاراول تهران</h1>
         </section>
         <footer class="masthead__arrow">
             <h2 style="text-align: left; direction: ltr">#laratalks</h2>
@@ -44,7 +43,7 @@
                         <p>لاراول یه فریم ورک باحاله که استارت آپ های زیادی تو ایران و بیرون از ایران ازش استفاده میکنن.
                             تو ایران به خاطر رایج تر بودن زبان پی اچ پی نسبت به انتخاب های دیگه مثل پایتون و روبی برای توسعه در وب برنامه نویسای باحال لاراولی زیاد داریم. برای همین ما تصمیم گرفتیم هر هفته یا نهایتا یک هفته در میون جلساتی رو ترتیب بدیم و با هم درباره مساءل روز در
                             دنیای استارت آپ ها،‌ آی تی و مخصوصا لارول بحث میکنیم. </p>
-                        <a href="http://myevent.ir/rwd1_conf" target="_blank" class="btn"><i class="fa fa-map-marker"></i> منم این هفته میام</a>
+                        <a href="#location" class="btn"><i class="fa fa-map-marker"></i> منم این هفته میام</a>
                         <p class="small"><i class="fa fa-info-circle"></i>&nbsp;&nbsp; لاراتاکز هر هفته تو دفتر یه شرکت، یه کافه یا یه پارک برگزار میشه.</p>
                     </article>
                     <article class="grid-col">
@@ -71,38 +70,7 @@
                     <h3>تا حالا کیا توی جلسات دورهمی شرکت کردن ؟</h3>
                 </header>
 
-                <section class="grid-wrap col-set-one-third tablet-col-set-one-half phone-col-set-full">
-                    <a href="http://ir.linkedin.com/in/parhamb" class="grid-col" target="_blank">
-                        <img src="static/img/people/parham.jpg" alt="پرهام باغستانی">
-                        <h2>پرهام باغستانی</h2>
-                        <h3>طراح تجربه کاربری</h3>
-                    </a>
-                    <a href="http://ir.linkedin.com/pub/amir-abbas-abdolali/37/196/337" class="grid-col" target="_blank">
-                        <img src="static/img/people/amirabbas.jpg" alt="سالار کابلی">
-                        <h2>امیرعباس عبدالعلی</h2>
-                        <h3>طراح و توسعه‌دهنده وب</h3>
-                    </a>
-                    <a href="http://ir.linkedin.com/pub/arash-milani/64/140/3bb" class="grid-col" target="_blank">
-                        <img src="static/img/people/arash.jpg" alt="آرش میلانی">
-                        <h2>آرش میلانی</h2>
-                        <h3>طراح و توسعه‌دهنده وب</h3>
-                    </a>
-                    <a href="http://amirsorouri.com" class="grid-col" target="_blank">
-                        <img src="static/img/people/amir.jpg" alt="امیر سروری">
-                        <h2>امیر سروری</h2>
-                        <h3>طراح رابط کاربری</h3>
-                    </a>
-                    <a href="http://ir.linkedin.com/in/mohsenbarati" class="grid-col" target="_blank">
-                        <img src="static/img/people/mohsen.jpg" alt="محسن براتی">
-                        <h2>محسن براتی</h2>
-                        <h3>توسعه‌دهنده وب و موبایل</h3>
-                    </a>
-                    <a href="http://ir.linkedin.com/in/shaho" class="grid-col" target="_blank">
-                        <img src="static/img/people/shaho.jpg" alt="شاهو طوفانی">
-                        <h2>شاهو طوفانی</h2>
-                        <h3>طراح و توسعه‌دهنده وب</h3>
-                    </a>
-                </section>
+                <section id="random-people-place" class="grid-wrap col-set-one-quarter tablet-col-set-one-half phone-col-set-full"></section>
 
             </section>
         </section>
@@ -196,7 +164,7 @@
         <!-- /Sponsors -->
 
         <!-- Organizers -->
-        <section class="section section--people section--organizers" id="organizers">
+        <!--section class="section section--people section--organizers" id="organizers">
             <section class="wrapper">
                 
                 <header class="section-header">
@@ -223,7 +191,7 @@
                 </section>
 
             </section>
-        </section>
+        </section-->
         <svg class="bigTriangle green-to-dark-gray" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
             <path d="M0 0 L50 100 L100 0 Z" />
         </svg>
@@ -255,11 +223,10 @@
         <a href="#" class="toggle"><i class="fa fa-reorder"></i></a>
         <section class="inner">
             <a href="#intro" class="active"><span>معرفی</span></a>
-            <a href="#speakers"><span>سخنران‌ها</span></a>
-            <a href="#schedule"><span>برنامه</span></a>
+            <a href="#speakers"><span>شرکت کنندگان</span></a>
+            <a href="#schedule"><span>گزارش جلسات</span></a>
             <a href="#location"><span>محل برگزاری</span></a>
             <a href="#sponsors"><span>حامیان</span></a>
-            <a href="#organizers"><span>برگزارگنندگان</span></a>
         </section>
     </nav>
     <!-- /Side Nav -->
@@ -274,7 +241,22 @@
     <!-- /IE Notice -->
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/underscore/underscore-min.js"></script>
+    <script type="text/template" id="people-random-sort-template">
+            <% _.each(people, function(person, index) { %>
+            <a href="<%= person.link %>" class="grid-col" target="_blank">
+                <img src="<%= person.image %>" alt="<%= person.name %>">
+                <h2><%= person.name %></h2>
+                <h3><%= person.description %></h3>
+                <% if(((index + 1) % 4) == 0) { %>
+                    <div class="clear"></div><br>
+                <% } %>
+            </a>
+            <% }); %>
+
+    </script>
+    <script src="static/js/laratalks.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="static/js/vendor/jquery.gomap.min.js"></script>
     <script src="static/js/app.js"></script>
