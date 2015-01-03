@@ -5,11 +5,11 @@ require 'compass/import-once/activate'
 http_path = "/"
 css_dir = "static/css"
 sass_dir = "static/lib"
-images_dir = "images"
-javascripts_dir = "static/img"
+images_dir = "static/img"
+javascripts_dir = "static/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
-# output_style = :expanded or :nested or :compact or :compressed
+output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
