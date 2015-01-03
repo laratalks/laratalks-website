@@ -25,7 +25,7 @@ svg.bigTriangle {
     }
 
     &.white-to-green{
-        background-color: $green-dark;
+        background-color: $main-dark;
 
         path{
             fill: $background;
@@ -37,8 +37,8 @@ svg.bigTriangle {
         background-color: $gray-darker;
 
         path{
-            fill: $green-dark;
-            stroke: $green-dark;
+            fill: $main-dark;
+            stroke: $main-dark;
         }
     }
 

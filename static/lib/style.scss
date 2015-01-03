@@ -30,9 +30,9 @@
     Variables
 \*------------------------------------*/
 $background: #FAFAFA;
-$green: #00ae9c;
-// $green-dark: #1d5842;
-$green-dark: darken($green, 12%);
+$main: #FA7161;
+// $main-dark: #1d5842;
+$main-dark: darken($main, 12%);
 $gray-darker: #191919;
 $gray-dark: darken(#62676b, 5%);
 $gray: lighten($gray-dark, 15%);
@@ -172,7 +172,7 @@ body{
 
     h1{
         letter-spacing: -1px;
-        color: darken($green, 5%);
+        color: darken($main, 5%);
         text-align: center;
         margin: 0;
         line-height: 1.2;
@@ -224,7 +224,7 @@ hr{
     height: 2.2em;
     text-decoration: none;
     color: #fff;
-    background-color: $green;
+    background-color: $main;
     display: inline-block;
     padding: 0 1em;
     font-weight: bold;
@@ -236,7 +236,7 @@ hr{
     }
 
     &:hover{
-        background-color: darken($green, 10%);
+        background-color: darken($main, 10%);
     }
 
     @include responsive(phone){
@@ -436,11 +436,11 @@ hr{
 
             a{
                 @include transition(color 300ms ease);
-                color: $green;
+                color: $main;
                 text-decoration: none;
 
                 &:hover{
-                    color: $green-dark;
+                    color: $main-dark;
                 }
             }
         }
@@ -501,7 +501,7 @@ hr{
         }
 
         &:hover{
-            color: $green;
+            color: $main;
 
             img{
                 @include grayscale-none;
@@ -584,10 +584,10 @@ hr{
             }
             h4{
                 margin: .4em 0 .5em;
-                color: $green;
+                color: $main;
 
                 a{
-                    color: $green;
+                    color: $main;
                     text-decoration: none;
                 }
 
@@ -763,7 +763,7 @@ hr{
 \*------------------------------------*/
 .section--organizers{
     // background-color: $blue;
-    background-color: $green-dark;
+    background-color: $main-dark;
 
     header{
         h1{
