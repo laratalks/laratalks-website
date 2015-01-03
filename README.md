@@ -1,15 +1,8 @@
-RWD Conference 1392
+Tehran Laravel Talks (laratalks)
 ===========
 
-Website for 1st Responsive Design Conference in Iran.  
-Designed and Developed by [Sallar Kaboli](http://sallar.me) for [Web Standards School](http://wsschool.org)’s RWD Conference which was held Dec 5th 2012 in Tehran, Iran.
-
-##Notes
-The CSS has been compiled using [Sass](http://sass-lang.com/), if you need to modify the CSS, please modify the Sass source located at `static/lib/style.scss` and compile using a Sass compiler or a build tool like [Grunt](http://gruntjs.com/). DO NOT modify the CSS directly as it will be overwritten by the compiler.
-
-##Logos License
-There are some logos present in the repository which are trademarks of their respective owners. You **ARE NOT** allowed to use their logos and trademarks in ANY project without permission.
-
+The main repository of [Tehran Laratalks website](http://laratalks.ir). The frontend template is a fork of
+Sallar Kaboli's [RWDConf-92](https://github.com/sallar/rwd-conf-92) website repository.
 
 ##License
 This program is licensed under [GPL v2](http://choosealicense.com/licenses/gpl-v2/) unless its otherwise noted. A full version of the license has been added to the repository for your reference.
