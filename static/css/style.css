@@ -3163,7 +3163,7 @@ hr {
   bottom: 0px;
   left: 0px;
   min-height: 100%;
-  background: url(../img/background.jpg) no-repeat;
+  background: url(../img/header.jpg) no-repeat;
   background-size: cover;
   color: #fff;
   direction: rtl;
@@ -3177,7 +3177,6 @@ hr {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background: url(../img/pattern.png?v3);
 }
 @media all and (max-width: 35em) {
   /* line 252, ../lib/style.scss */

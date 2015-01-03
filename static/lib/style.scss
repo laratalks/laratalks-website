@@ -252,7 +252,7 @@ hr{
 .masthead{
     @include position(fixed, 0px 0px 0px 0px);
     min-height: 100%;
-    background: url(../img/background.jpg) no-repeat;
+    background: url(../img/header.jpg) no-repeat;
     background-size: cover;
     color: #fff;
     direction: rtl;
@@ -261,7 +261,7 @@ hr{
 
     .overlay{
         @include position(absolute, 0px 0px 0px 0px);
-        background: url(../img/pattern.png?v3);
+        //  background: url(../img/pattern.png?v3);
     }
 
     @include responsive(phone){
