@@ -1,0 +1,25 @@
+{
+  "name": "laratalks-website",
+  "version": "0.0.1",
+  "homepage": "https://github.com/laratalks/laratalks-website",
+  "authors": [
+    "Laratalks.ir"
+  ],
+  "description": "Tehran Laravel Group",
+  "main": "bower.json",
+  "keywords": [
+    "laravel"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "*",
+    "jquery": "2.*"
+  }
+}
