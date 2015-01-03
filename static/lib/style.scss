@@ -32,11 +32,12 @@
 $background: #FAFAFA;
 $main: #FA7161;
 // $main-dark: #1d5842;
-$main-dark: darken($main, 12%);
+$main-dark: darken($main, 3%);
 $gray-darker: #191919;
 $gray-dark: darken(#62676b, 5%);
 $gray: lighten($gray-dark, 15%);
 $gray-light: lighten($gray, 35%);
+$gray-lighter : lighten($gray, 45%);
 //$milk: darken(#F3F2EF, 1%);
 $milk: #F3F2EF;
 $blue: #004d76;
@@ -771,7 +772,7 @@ hr{
         }
         h3{
             //color: lighten(#41AFD3, 20%);
-            color: $gray-light;
+            color: $gray-lighter;
         }
     }
 
@@ -784,7 +785,7 @@ hr{
         }
 
         h3{
-            color: $gray-light;
+            color: $gray-lighter;
         }
 
     }
