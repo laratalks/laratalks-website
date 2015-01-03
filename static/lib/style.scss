@@ -274,13 +274,16 @@ hr{
         @include transform(translate(-50%,-60%));
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 40%;
 
         h1{
-            @include hide-text;
+            //@include hide-text;
             width: 772px;
             height: 152px;
-            background: url(../img/logo.svg) 0 0 no-repeat;
+            background: url(../img/laravel-logo.png) 0 0 no-repeat;
+            background-size: 152px;
+            background-position: center;
+            padding-top: 170px;
         }
 
         figure{
@@ -468,7 +471,7 @@ hr{
 
     a.grid-col{
         @include transition(color 200ms ease-in-out);
-        margin-bottom: 2em;
+        margin-bottom: 0;
         display: block;
         text-decoration: none;
         color: $gray-dark;
@@ -493,12 +496,14 @@ hr{
             overflow: hidden;
             color: inherit;
             white-space: nowrap;
+            font-size: 1em;
         }
 
         h3{
             //color: darken($gray-light, 10%);
             color: $gray;
             margin-top: .1em;
+            font-size: 0.8em;
             //font-weight: normal;
         }
 
@@ -859,6 +864,10 @@ hr{
             border-radius: 50%;
         }
     }
+}
+
+.clear {
+    clear: both;
 }
 
 .grayable {
