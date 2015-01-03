@@ -397,12 +397,13 @@ hr{
     .showcase{
         max-width: 410px;
         padding-bottom: 75%;
-        background: url(../img/flat.png) top center no-repeat;
+        background: url(../img/guys.jpg) top center no-repeat;
         background-size: 100%;
         margin: 0 auto;
+        border-radius: 4px;
 
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
-            background-image: url(../img/flat@2x.png);
+            background-image: url(../img/guys.jpg);
         }
     }
     p.small{
@@ -857,5 +858,14 @@ hr{
             margin: -.17em 0 0 -.175em;
             border-radius: 50%;
         }
+    }
+}
+
+.grayable {
+    @include grayscale;
+    @include transition(all 200ms ease-in-out);
+
+    &:hover {
+        @include grayscale-none;
     }
 }
