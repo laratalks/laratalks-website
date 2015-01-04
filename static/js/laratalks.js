@@ -102,6 +102,7 @@ LaraTalks.addScript = function (url, fnCallbacks) {
 
     script.type = 'text/javascript';
     script.src = url;
+    script.async = true;
 
     document.body.appendChild(script);
 
