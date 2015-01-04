@@ -8,9 +8,11 @@ LaraTalks.prototype.begin = function () {
 
     $(document).ready(function(){
 
-        parent.insertRandomPeople()
+        parent.insertRandomPeople();
 
     });
+
+    this.prettyHeader();
 
 };
 
@@ -33,6 +35,7 @@ LaraTalks.prototype.insertRandomPeople = function() {
 var config = {
     $RANDOM_PEOPLE_TEMPLATE : $('#people-random-sort-template'),
     $RANDOM_PEOPLE_PLACE : $("#random-people-place"),
+    $FADEABLE_CONTENT : $('.masthead__content'),
     PEOPLE : [
         {
             name : "بهزاد شعبانی",
@@ -83,6 +86,23 @@ var config = {
             description : "اسپرت آوران"
         }
     ]
+};
+
+LaraTalks.prototype.prettyHeader = function () {
+
+    var parent = this;
+
+    $(document).on('scroll', function(){
+
+        var windowHeight = $(window).height(),
+            percent = 100 / windowHeight,
+            top = $(document).scrollTop(),
+            opacity = Math.abs(((windowHeight - top) * percent));
+
+        parent.config.$FADEABLE_CONTENT.css({'opacity' : opacity / 100});
+
+    });
+
 };
 
 var app = new LaraTalks(config); app.begin();
