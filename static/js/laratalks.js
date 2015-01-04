@@ -109,12 +109,14 @@ LaraTalks.addScript = function (url, fnCallbacks) {
 };
 
 LaraTalks.prototype.handleMap = function() {
-    $(window).ready(function () {
-        setTimeout(function(){
-            LaraTalks.addScript(
-                'http://maps.googleapis.com/maps/api/js?sensor=false&callback=laraTalkOnMapReady'
-            );
-        }, 1000);
+    $(document).ready(function () {
+        $(window).load(function(){
+            setTimeout(function(){
+                LaraTalks.addScript(
+                    'http://maps.googleapis.com/maps/api/js?sensor=false&callback=laraTalkOnMapReady'
+                );
+            }, 1000);
+        });
     });
 };
 
