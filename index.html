@@ -14,7 +14,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://laratalks.ir"/>
 
-    <link rel="stylesheet" href="static/css/style.css" media="all">
+    <link rel="stylesheet" href="dist/css/style.min.css" media="all">
 </head>
 <body>
     <header class="masthead">
@@ -201,25 +201,18 @@
     </div>
     <!-- /IE Notice -->
 
-
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="vendor/underscore/underscore-min.js"></script>
     <script type="text/template" id="people-random-sort-template">
-            <% _.each(people, function(person, index) { %>
-            <a href="<%= person.link %>" class="grid-col" target="_blank">
-                <img src="<%= person.image %>" alt="<%= person.name %>">
-                <h2><%= person.name %></h2>
-                <h3><%= person.description %></h3>
-                <% if(((index + 1) % 4) == 0) { %>
-                    <div class="clear"></div><br>
-                <% } %>
-            </a>
-            <% }); %>
-
+        <% _.each(people, function(person, index) { %>
+        <a href="<%= person.link %>" class="grid-col" target="_blank">
+            <img src="<%= person.image %>" alt="<%= person.name %>">
+            <h2><%= person.name %></h2>
+            <h3><%= person.description %></h3>
+            <% if(((index + 1) % 4) == 0) { %>
+            <div class="clear"></div><br>
+            <% } %>
+        </a>
+        <% }); %>
     </script>
-    <script src="static/js/laratalks.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="static/js/vendor/jquery.gomap.min.js"></script>
-    <script src="static/js/app.js"></script>
+    <script src="dist/js/main.js"></script>
 </body>
 </html>

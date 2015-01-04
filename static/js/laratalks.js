@@ -40,52 +40,81 @@ var config = {
         {
             name : "بهزاد شعبانی",
             link : "https://twitter.com/Behzad_sh",
-            image : "static/img/people/behzad.jpeg",
+            image : "dist/img/people/behzad.jpeg",
             description : "توسعه دهنده در ibartar.com"
         },
         {
             name : "محمدرضا شادمان",
             link : "http://twitter.com/bigsinoos",
-            image : "static/img/people/mohammad_reza.jpeg",
+            image : "dist/img/people/mohammad_reza.jpeg",
             description : "توسعه دهنده در ibartar.com"
         },
         {
             name : "مرتضی پروینی",
             link : "http://twitter.com/imorteza",
-            image : "static/img/people/morteza.jpeg",
+            image : "dist/img/people/morteza.jpeg",
             description : "توسعه دهنده لاراول"
         },
         {
             name : "حسن گیلک",
             link : "https://twitter.com/hasangilak",
-            image : "static/img/people/hasan.jpeg",
+            image : "dist/img/people/hasan.jpeg",
             description : "توسعه دهنده در آریاسان"
         },
         {
             name : "رضا محمودیان",
             link : "https://twitter.com/Rez___a",
-            image : "static/img/people/reza.jpeg",
+            image : "dist/img/people/reza.jpeg",
             description : "طراح رابط کاربری بانک سامان"
         },
         {
             name : "امیر حبیب زاده",
             link : "https://twitter.com/amir_habibzadeh",
-            image : "static/img/people/amir.jpeg",
+            image : "dist/img/people/amir.jpeg",
             description : "توسعه دهنده لاراول"
         },
         {
             name : "احمدکریم پور",
             link : "https://twitter.com/iahmadina",
-            image : "static/img/people/ahmad.jpeg",
+            image : "dist/img/people/ahmad.jpeg",
             description : "توسعه دهنده لاراول"
         },
         {
             name : "حمید کریمی",
             link : "http://google.com",
-            image : "static/img/people/hamid.jpeg",
+            image : "dist/img/people/hamid.jpeg",
             description : "اسپرت آوران"
         }
     ]
+};
+
+LaraTalks.addScript = function (url, fnCallbacks) {
+
+    var script = document.createElement( 'script' );
+
+    if(fnCallbacks) {
+
+        _.each(fnCallbacks, function(fn){
+            script.onload = fn;
+        });
+
+    }
+
+    script.type = 'text/javascript';
+    script.src = url;
+
+    document.body.appendChild(script);
+
+};
+
+LaraTalks.prototype.handleMap = function() {
+    $(window).ready(function () {
+        setTimeout(function(){
+            LaraTalks.addScript(
+                'http://maps.googleapis.com/maps/api/js?sensor=false&callback=laraTalkOnMapReady'
+            );
+        }, 1000);
+    });
 };
 
 LaraTalks.prototype.prettyHeader = function () {
@@ -105,4 +134,7 @@ LaraTalks.prototype.prettyHeader = function () {
 
 };
 
-var app = new LaraTalks(config); app.begin();
+var app = new LaraTalks(config);
+
+app.begin();
+app.handleMap();

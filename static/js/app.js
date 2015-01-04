@@ -31,32 +31,35 @@ if( touch ) {
 }
 
 
-/**
- * Add Map
- */
-if( $('.map-container').length > 0 )
-{   
-    var $map = $('.map-container'),
+function laraTalkOnMapReady()
+{
 
-    mapOptions = {
-        zoom               : 8,
-        center             : new google.maps.LatLng(0,0),
-        mapTypeId          : google.maps.MapTypeId.ROADMAP,
-        zoom               : 16,
-        disableDefaultUI   : true,
-        scrollwheel        : false,
-        zoomControl        : true,
-        zoomControlOptions : {
-            style: google.maps.ZoomControlStyle.SMALL,
-            position: google.maps.ControlPosition.LEFT_TOP
-        }
-    },
+    loadGoMap();
 
-    map = new google.maps.Map($map[0], mapOptions),
+    if( $('.map-container').length > 0 )
+    {
+        var $map = $('.map-container'),
 
-    marker = new google.maps.Marker({
-        position : new google.maps.LatLng(35.732766,51.389306),
-        map      : map,
-        title    : 'RWD Conference'
-    });
+            mapOptions = {
+                zoom               : 8,
+                center             : new google.maps.LatLng(0,0),
+                mapTypeId          : google.maps.MapTypeId.ROADMAP,
+                zoom               : 16,
+                disableDefaultUI   : true,
+                scrollwheel        : false,
+                zoomControl        : true,
+                zoomControlOptions : {
+                    style: google.maps.ZoomControlStyle.SMALL,
+                    position: google.maps.ControlPosition.LEFT_TOP
+                }
+            },
+
+            map = new google.maps.Map($map[0], mapOptions),
+
+            marker = new google.maps.Marker({
+                position : new google.maps.LatLng(35.732766,51.389306),
+                map      : map,
+                title    : 'RWD Conference'
+            });
+    }
 }
