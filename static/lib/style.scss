@@ -123,6 +123,15 @@ html{
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+	color: $main-dark;
+	border-bottom: 1px dotted $main-dark;
+	text-decoration: none;
+	&:hover{
+		color: darken($main-dark, 10%);
+		border-color: darken($main-dark, 10%);
+	}
+}
 body{
     .ie-notice{
         display: none;
@@ -341,6 +350,7 @@ hr{
             opacity: 1;
             color: #fff;
             display: inline-block;
+            border: none;
 
             &:hover{
                 @include transform(scale(1.2));
@@ -476,6 +486,7 @@ hr{
         text-decoration: none;
         color: $gray-dark;
         text-align: center;
+        border: none;
 
         img{
             @include transition(all 200ms ease-in-out);
