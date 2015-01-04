@@ -283,16 +283,15 @@ hr{
         @include transform(translate(-50%,-60%));
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 50%;
 
         h1{
-            //@include hide-text;
+            @include hide-text;
             width: 772px;
-            height: 152px;
-            background: url(../img/laravel-logo.png) 0 0 no-repeat;
-            background-size: 152px;
+            height: 384px;
+            background: url(../img/logo-main.png) 0 0 no-repeat;
+            background-size: 384px;
             background-position: center;
-            padding-top: 170px;
         }
 
         figure{
@@ -320,7 +319,7 @@ hr{
 
             h1{
                 width: 100%;
-                height: 0;
+                background-size: 100%;
                 padding-bottom: 20%;
                 background-size: 100%;
             }
@@ -772,6 +771,12 @@ hr{
             }
         }
 
+        p {
+            a {
+                margin : 0;
+            }
+        }
+
     }
 
 }
@@ -888,4 +893,8 @@ hr{
     &:hover {
         @include grayscale-none;
     }
+}
+
+h3.dark-gray {
+        color : #565A5E;
 }
