@@ -760,6 +760,12 @@ hr{
             }
         }
 
+        p {
+            a {
+                margin : 0;
+            }
+        }
+
     }
 
 }
@@ -876,4 +882,8 @@ hr{
     &:hover {
         @include grayscale-none;
     }
+}
+
+h3.dark-gray {
+        color : #565A5E;
 }
