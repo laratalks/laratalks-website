@@ -41,13 +41,13 @@ var config = {
             name : "بهزاد شعبانی",
             link : "https://twitter.com/Behzad_sh",
             image : "dist/img/people/behzad.jpeg",
-            description : "توسعه دهنده در ibartar.com"
+            description : "توسعه دهنده لاراول"
         },
         {
             name : "محمدرضا شادمان",
             link : "http://twitter.com/bigsinoos",
             image : "dist/img/people/mohammad_reza.jpeg",
-            description : "توسعه دهنده در ibartar.com"
+            description : "توسعه دهنده لاراول"
         },
         {
             name : "مرتضی پروینی",
@@ -59,7 +59,7 @@ var config = {
             name : "حسن گیلک",
             link : "https://twitter.com/hasangilak",
             image : "dist/img/people/hasan.jpeg",
-            description : "توسعه دهنده در آریاسان"
+            description : "توسعه دهنده لاراول"
         },
         {
             name : "رضا محمودیان",
