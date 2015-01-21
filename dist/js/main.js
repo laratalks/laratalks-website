@@ -200,7 +200,7 @@ function laraTalkOnMapReady()
 
             mapOptions = {
                 zoom               : 8,
-                center             : new google.maps.LatLng(35.698405, 51.422836),
+                center             : new google.maps.LatLng(35.738324, 51.382067),
                 mapTypeId          : google.maps.MapTypeId.ROADMAP,
                 zoom               : 16,
                 disableDefaultUI   : true,
@@ -215,9 +215,9 @@ function laraTalkOnMapReady()
             map = new google.maps.Map($map[0], mapOptions),
 
             marker = new google.maps.Marker({
-                position : new google.maps.LatLng(35.698405, 51.422836),
+                position : new google.maps.LatLng(35.738324, 51.382067),
                 map      : map,
-                title    : 'RWD Conference'
+                title    : 'Laratalks Iran'
             });
     }
 }

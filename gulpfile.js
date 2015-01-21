@@ -5,7 +5,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     del = require('del');
 
@@ -15,8 +14,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('dist/css'))
-        .pipe(notify({ message: 'Styles task complete' }));
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('fonts', function(){
@@ -38,8 +36,7 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'))
-        .pipe(notify({ message: 'Scripts task complete' }));
+        .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('images', function() {
