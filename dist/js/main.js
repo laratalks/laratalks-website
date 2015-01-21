@@ -29,7 +29,7 @@ LaraTalks.prototype.begin = function () {
 
 LaraTalks.prototype.insertRandomPeople = function() {
 
-    var people = _.shuffle(this.config.PEOPLE).slice(0, 9),
+    var people = _.shuffle(this.config.PEOPLE).slice(0, 8),
         $template = this.config.$RANDOM_PEOPLE_TEMPLATE,
         $place = this.config.$RANDOM_PEOPLE_PLACE;
 
@@ -92,9 +92,15 @@ var config = {
         },
         {
             name : "حمید کریمی",
-            link : "http://google.com",
+            link : "https://twitter.com/hamid_karimii",
             image : "dist/img/people/hamid.jpeg",
             description : "اسپرت آوران"
+        },
+        {
+            name: "رسول  عبداللهی",
+            link : 'https://twitter.com/ira3oul',
+            image : 'dist/img/people/rasool.jpeg',
+            description : 'توسعه دهنده لاراول'
         }
     ]
 };
