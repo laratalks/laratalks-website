@@ -1,7 +1,7 @@
 Tehran Laravel Talks (laratalks)
 ===========
 
-The main repository of [Tehran Laratalks website](http://laratalks.ir). The frontend template is a fork of
+The main repository of [Tehran Laratalks website](http://www.laratalks.com). The frontend template is a fork of
 Sallar Kaboli's [RWDConf-92](https://github.com/sallar/rwd-conf-92) website repository.
 
 ##License
