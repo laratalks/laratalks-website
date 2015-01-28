@@ -42,7 +42,7 @@ function laraTalkOnMapReady()
 
             mapOptions = {
                 zoom               : 8,
-                center             : new google.maps.LatLng(35.738324, 51.382067),
+                center             : new google.maps.LatLng(35.698272, 51.422725),
                 mapTypeId          : google.maps.MapTypeId.ROADMAP,
                 zoom               : 16,
                 disableDefaultUI   : true,
