@@ -9,8 +9,7 @@ var gulp = require('gulp'),
     del = require('del');
 
 gulp.task('styles', function() {
-    return gulp.src('static/lib/style.scss')
-        .pipe(sass({ style: 'compressed' }))
+    return sass('static/lib/style.scss', { style: 'compressed' })
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
