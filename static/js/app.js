@@ -42,7 +42,7 @@ function laraTalkOnMapReady()
 
             mapOptions = {
                 zoom               : 8,
-                center             : new google.maps.LatLng(35.698272, 51.422725),
+                center             : new google.maps.LatLng(35.6795934, 51.3805193),
                 mapTypeId          : google.maps.MapTypeId.ROADMAP,
                 zoom               : 16,
                 disableDefaultUI   : true,
@@ -57,7 +57,7 @@ function laraTalkOnMapReady()
             map = new google.maps.Map($map[0], mapOptions),
 
             marker = new google.maps.Marker({
-                position : new google.maps.LatLng(35.738324, 51.382067),
+                position : new google.maps.LatLng(35.6795934, 51.3805193),
                 map      : map,
                 title    : 'Laratalks Iran'
             });
