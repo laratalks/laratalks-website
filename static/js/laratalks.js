@@ -90,6 +90,12 @@ var config = {
             link : 'https://twitter.com/ira3oul',
             image : 'dist/img/people/rasool.jpeg',
             description : 'توسعه دهنده لاراول'
+        },
+        {
+            name: 'حسام ندر',
+            link : 'https://www.facebook.com/hessam.nadr',
+            image: "dist/img/people/hesam.jpeg",
+            description: 'توسعه دهنده رابط کاربری'
         }
     ]
 };
