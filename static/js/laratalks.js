@@ -45,7 +45,7 @@ var config = {
         },
         {
             name : "محمدرضا شادمان",
-            link : "http://twitter.com/bigsinoos",
+            link : "http://github.com/reshadman",
             image : "dist/img/people/mohammad_reza.jpeg",
             description : "توسعه دهنده لاراول"
         },
