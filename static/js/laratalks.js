@@ -18,7 +18,7 @@ LaraTalks.prototype.begin = function () {
 
 LaraTalks.prototype.insertRandomPeople = function() {
 
-    var people = _.shuffle(this.config.PEOPLE).slice(0, 8),
+    var people = _.shuffle(this.config.PEOPLE).slice(0, 12),
         $template = this.config.$RANDOM_PEOPLE_TEMPLATE,
         $place = this.config.$RANDOM_PEOPLE_PLACE;
 
@@ -40,56 +40,62 @@ var config = {
         {
             name : "بهزاد شعبانی",
             link : "https://twitter.com/Behzad_sh",
-            image : "dist/img/people/behzad.jpeg",
-            description : "توسعه دهنده لاراول"
+            image : "dist/img/people/behzad.jpeg"
         },
         {
             name : "محمدرضا شادمان",
             link : "http://github.com/reshadman",
-            image : "dist/img/people/mohammad_reza.jpeg",
-            description : "توسعه دهنده لاراول"
+            image : "dist/img/people/mohammad_reza.jpeg"
         },
         {
             name : "مرتضی پروینی",
             link : "http://twitter.com/imorteza",
-            image : "dist/img/people/morteza.jpeg",
-            description : "توسعه دهنده لاراول"
+            image : "dist/img/people/morteza.jpeg"
         },
         {
             name : "حسن گیلک",
             link : "https://twitter.com/hasangilak",
-            image : "dist/img/people/hasan.jpeg",
-            description : "توسعه دهنده لاراول"
+            image : "dist/img/people/hasan.jpeg"
         },
         {
             name : "رضا محمودیان",
             link : "https://twitter.com/Rez___a",
-            image : "dist/img/people/reza.jpeg",
-            description : "طراح رابط کاربری بانک سامان"
+            image : "dist/img/people/reza.jpeg"
         },
         {
             name : "امیر حبیب زاده",
             link : "https://twitter.com/amir_habibzadeh",
-            image : "dist/img/people/amir.jpeg",
-            description : "توسعه دهنده لاراول"
+            image : "dist/img/people/amir.jpeg"
         },
         {
             name : "احمدکریم پور",
             link : "https://twitter.com/iahmadina",
-            image : "dist/img/people/ahmad.jpeg",
-            description : "توسعه دهنده لاراول"
+            image : "dist/img/people/ahmad.jpeg"
         },
         {
             name : "حمید کریمی",
             link : "https://twitter.com/hamid_karimii",
-            image : "dist/img/people/hamid.jpeg",
-            description : "اسپرت آوران"
+            image : "dist/img/people/hamid.jpeg"
         },
         {
             name: "رسول  عبداللهی",
             link : 'https://twitter.com/ira3oul',
-            image : 'dist/img/people/rasool.jpeg',
-            description : 'توسعه دهنده لاراول'
+            image : 'dist/img/people/rasool.jpeg'
+        },
+        {
+            name: "حسام ندر",
+            link : 'https://twitter.com/hessam_nadr',
+            image : 'dist/img/people/hessam.jpeg'
+        },
+        {
+            name: "محمد محبی فر",
+            link : 'https://twitter.com/mohebifar',
+            image : 'dist/img/people/mohebifar.jpeg'
+        },
+        {
+            name: "پیمان اسکندری",
+            link : 'https://twitter.com/peyman3d',
+            image : 'dist/img/people/peyman-eskandari.jpeg'
         }
     ]
 };
