@@ -107,6 +107,11 @@ var config = {
             name: "پیمان اسکندری",
             link : 'https://twitter.com/peyman3d',
             image : 'dist/img/people/peyman-eskandari.jpeg'
+        },
+        {
+            name: "امیر علیان",
+            link : 'https://twitter.com/amircup2011',
+            image : 'dist/img/people/amir-alian.jpeg'
         }
     ]
 };
