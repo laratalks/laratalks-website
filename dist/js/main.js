@@ -107,11 +107,6 @@ var config = {
             name: "پیمان اسکندری",
             link : 'https://twitter.com/peyman3d',
             image : 'dist/img/people/peyman-eskandari.jpeg'
-        },
-        {
-            name: "امیر علیان",
-            link : 'https://twitter.com/amircup2011',
-            image : 'dist/img/people/amir-alian.jpeg'
         }
     ]
 };
@@ -217,7 +212,7 @@ function laraTalkOnMapReady()
         var $map = $('.map-container'),
             mapOptions = {
                 zoom               : 8,
-                center             : new google.maps.LatLng(35.678679, 51.380874),
+                center             : new google.maps.LatLng(35.734442, 51.4142213),
                 mapTypeId          : google.maps.MapTypeId.ROADMAP,
                 zoom               : 16,
                 disableDefaultUI   : true,
@@ -232,7 +227,7 @@ function laraTalkOnMapReady()
             map = new google.maps.Map($map[0], mapOptions),
 
             marker = new google.maps.Marker({
-                position : new google.maps.LatLng(35.678679, 51.380874),
+                position : new google.maps.LatLng(35.734442, 51.4142213),
                 map      : map,
                 title    : 'Laratalks Iran'
             });

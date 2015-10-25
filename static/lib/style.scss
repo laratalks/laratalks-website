@@ -656,7 +656,7 @@ hr{
 
 .section--location{
     padding: 6em 0 1em;
-    background-color: lighten($milk, 2%);
+    background-color: #fff;
 
     .section-header{
         margin-bottom: 2em;
@@ -679,6 +679,12 @@ hr{
             bottom: -.15em;
         }
     }
+}
+/*------------------------------------*\
+    Larapakhsh
+\*------------------------------------*/
+.section--larapakhsh {
+    background-color: #f7f7f5;
 }
 
 /*------------------------------------*\

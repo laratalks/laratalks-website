@@ -64,8 +64,8 @@ svg.bigTriangle {
         background-color: transparent;
 
         path{
-            fill: $background;
-            stroke: $background;
+            fill: #fff;
+            stroke: #fff;
         }
     }
 
@@ -86,6 +86,15 @@ svg.bigTriangle {
 
     &.light-gray-to-nothing{
         background-color: transparent;
+
+        path{
+            fill: lighten($milk, 2%);
+            stroke: lighten($milk, 2%);
+        }
+    }
+
+    &.light-gray-to-white{
+        background-color: #fff;
 
         path{
             fill: lighten($milk, 2%);
