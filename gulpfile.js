@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
@@ -9,7 +9,8 @@ var gulp = require('gulp'),
     del = require('del');
 
 gulp.task('styles', function() {
-    return sass('static/lib/style.scss', { style: 'compressed' })
+    return gulp.src('static/lib/style.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
